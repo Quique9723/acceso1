@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"      
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	  layout:decorate="~{dialectLayouts/master}">
+
+ 
+
+
+
+
+    <main layout:fragment="dialectLayoutCentral" class="pb-5 pt-5 bg-dark text-light" style="">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-12 col-md-8 col-lg-7">
+            <h3 class="fw-bold display-4 text-white">Vista de Familia de Productos</h3>
+            <h4 class="display-5 text-white">We love to hear from you!</h4>
+          </div>
+          
+          <div th:if="${flashMessage != null}" th:text="${flashMessage}"
+          class="alert alert-dimissible fade show h3 text-succes" role="alert">
+          </div>
+          
+        </div>
+        <div class="row pt-4">
+          <div class="col-12">
+            <form th:object= "${entity}">
+              <div class="row">
+                <div class="col-12 col-md">
+                  <input type="text" class="form-control" placeholder="Id"
+                   th:field="*{id}" readonly>
+                </div>
+                <div class="col-12 col-md mt-4 mt-md-0">
+                  <input type="text" class="form-control" placeholder="Descripción"
+                  th:field="*{description}" readonly >
+                </div>
+                <div class="col-12 col-md mt-4 mt-md-0">
+                  <input type="text" class="form-control"
+                    placeholder="Productos asociados"
+                    th:field="*{productList}" readonly>
+                </div>
+              </div>
+              
+            
+              <div class="row mt-4">
+                <div class="col text-center">
+                  <a type="submit"
+                    class="btn btn-primary btn-lg" th:href="@{/startLoggedServicesFamilyProduct}" role="button"> Volver</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  
+</html>

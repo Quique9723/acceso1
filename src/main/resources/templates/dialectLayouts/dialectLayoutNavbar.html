@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"      
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <nav th:fragment="dialectLayoutNavbar1" 
+    	class="navbar navbar-expand-lg navbar-dark border border-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" th:href="@{/welcomeGet}">
+          <img th:src="@{/img/es_ES.svg} " alt="UI Kit"
+            style="width: 100px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ms-auto me-sm-2 mt-2 mt-lg-0">
+            <li class="nav-item active me-3">
+              <a class="nav-link" th:href="@{/startLogged}">Home <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">About</a>
+            </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="servicesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img class="rounded-circle u-box-shadow-sm me-2" width="30"
+                  height="30" th:src="@{img/Foto_JAG.jpg}"
+                  alt="Htmlstream"> 
+                 
+                 Data
+                  <i class="fa fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <a class="dropdown-item" th:href="@{/startLoggedServicesFamilyProduct}" th:text="#{html.dialectLayoutNavbar.services.familyProduct}"></a>
+                <a class="dropdown-item" href="#" th:text="#{html.dialectLayoutNavbar.services.product}">Product</a>
+                <a class="dropdown-item" th:href="@{/cartAdd}" th:text="#{html.dialectLayoutNavbar.services.order}">Order</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" th:text="#{html.dialectLayoutNavbar.services.user}">User</a>
+              </div>
+            </li>
+            
+            
+            
+           
+          <!--  <li class="nav-item me-3">
+              <a class="nav-link" href="#">Our Work</a>
+            </li> --> 
+            
+            <li sec:authorize="hasAuthority('CUSTOMER')"
+            th:if="${numberOfProducts != null}" class="nav-item me-3 mt-1">
+            <a th:href="@{/cart/cartSummary}" class="btn text-primary bg-dark
+            position-relative">
+            <i class="fas fa-shopping-cart fa-lg">
+            <span th:text="${numberOfProducts}" class="position-absolute
+            top-0 start-100
+            translate-middle badge rounded-pill bg-danger">5
+            <span class="visually-hidden">Shoping cart</span>
+             
+            
+            </span>
+            </i>
+            </a>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img class="rounded-circle u-box-shadow-sm me-2" width="30"
+                  height="30" th:src="@{img/Foto_JAG.jpg}"
+                  alt="Htmlstream"> 
+                 <span th:text="${#authentication.getPrincipal().getUsername()} + '>' + ${#authentication.getPrincipal().getFullname()}">
+                  John Doe 
+                  </span>
+                  <i class="fa fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Account Settings</a>
+                <a class="dropdown-item" href="#">Newsletter</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sign Out</a>
+              </div>
+            </li>
+            
+          
+            <li class="nav-item dropdown bg-dark text-success">
+                <a class="nav-link p-1 m-0 dropdown-togle" id="comboLanguage" href="#" role="button"
+                	data-bs-toggle="dropdown" aria-haspopup="true" 
+                	aria-expanded="false">
+                    <img th:src="@{/img/world.svg}" height="40">
+                    <span th:text="#{lang.change}"></span>
+	                <i class="fa fa-angle-down"></i>
+                </a> 
+                
+                <div class="dropdown-menu dropdown-menu-lg-end bg-light btn btn-outline-success p-0 m-0" 
+                	style="text-decoration:none; margin-top: 0px; margin-bottom: 0px;" aria-labelledby="comboLanguage">
+                    <a class="dropdown-item" th:classappend="__${#locale}__=='es_ES' ? 'bg-success text-white' : 'bg-dark text-success'" 
+                     	th:href="${requestURI} + '?lang=es_ES'" style="text-decoration:none; margin-top: 0px; margin-bottom: 0px;">
+                       	<img th:src="@{/img/es_ES.svg}" style="width:30px; margin-top: 0px; margin-bottom: 0px;">
+                       	<span th:text="#{lang.es_ES}" style="margin-top: 0px; margin-bottom: 0px;"></span>
+                   	</a>
+                    <div class="dropdown-divider border-success" style="margin-top: 0px; margin-bottom: 0px;"></div>
+                    <a class="dropdown-item" th:classappend="__${#locale}__=='en_US' ? 'bg-success text-white' : 'bg-dark text-success'" 
+                       	th:href="${requestURI} + '?lang=en_US'" style="text-decoration:none; margin-top: 0px; margin-bottom: 0px;">
+                       	<img th:src="@{/img/en_US.svg}" style="width:30px; margin-top: 0px; margin-bottom: 0px;">
+                       	<span th:text="#{lang.en_US}" style="margin-top: 0px; margin-bottom: 0px;"></span>
+                   	</a>
+                    <a class="dropdown-item" th:classappend="__${#locale}__=='fr_FR' ? 'bg-success text-white' : 'bg-dark text-success'" 
+                       	th:href="${requestURI} + '?lang=fr_FR'" style="text-decoration:none; margin-top: 0px; margin-bottom: 0px;">
+                       	<img th:src="@{/img/fr_FR.svg}" style="width:30px; margin-top: 0px; margin-bottom: 0px;">
+                       	<span th:text="#{lang.fr_FR}" style="margin-top: 0px; margin-bottom: 0px;"></span>
+                   	</a>                
+                </div>
+            </li>      
+            
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+  <head th:replace="~{standardLayouts/standardLayoutHead :: standardLayoutHead1}"></head>
+  
+ 
+
+  <body>
+   <section th:replace="~{standardLayouts/standardLayoutNavbarStartLogged :: standardLayoutNavbarStartLogged1}"></section>
+
+   
+
+
+    <section class="pt-5 pb-5 bg-dark text-light">
+      <div class="container pb-5 pt-5">
+        <div class="row align-items-center justify-content-between ">
+          <div class="col-12 col-md-5 pr-md-5 ">
+            <h1 class="mb-3 mt-5 display-4 fw-bold" th:text="#{html.standardLayoutStartLogged.hello.title}">Hello</h1>
+            <p class="lead" th:text="#{html.standardLayoutStartLogged.hello.subtitle}">A collection of coded HTML and CSS elements to
+              help your build your new website. Clean design, fully responsive
+              and based on Bootstrap.</p>
+            <div class="  d-flex mt-3 mb-1">
+              <a class="btn btn-success btn-lg  mt-md-3  " href="#"
+                role="button" th:text="#{html.standardLayoutStartLogged.hello.button}">Learn more now</a>
+            </div>
+            <p>
+            	<span class="text-danger"
+            	th:text="'StandardLayout > request.getLocale():'+${requestGetLocale}"></span>
+            	<p>
+            	<p>
+            	<span class="text-warning"
+            	th:text="'StandardLayout > Current Session Locale: ' + ${sessionContextLocale}"></span>
+            	<p>
+          </div>
+          <div class="col-12 col-md-7  mt-4 mt-md-0">
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
+              <iframe class="ratio ratio-16x9"
+                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section th:replace="~{standardLayouts/standardLayoutCreditStartLogged :: standardLayoutCreditStartLogged1}"></section>
+    
+    <section th:replace="~{standardLayouts/standardLayoutFootStartLogged :: standardLayoutFootStartLogged1}"></section>
+
+
+  </body>
+
+</html>

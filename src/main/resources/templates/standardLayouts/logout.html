@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+		xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+  <head th:replace="~{standardLayouts/standardLayoutHead :: standardLayoutHead1}"></head>
+
+  <body>
+
+
+
+
+    <section class="pt-5 pb-5 bg-dark text-white vh-100">
+      <div class="container py-4">
+
+
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold text-white" th:text="${username} + ' , ¿seguro que te quieres ir?'"></h1>
+            <p class="col-md-8 fs-4" th:text="#{html.logout.title}">>Using a series of utilities, you can create
+              this jumbotron, just like the one in previous versions of
+              Bootstrap. Check out the examples below for how you can remix and
+              restyle it to your liking.</p>
+              
+            <form th:action="@{/logoutPost}" method="POST"> 
+            <button class="btn btn-primary btn-lg" th:text="#{html.logout.logout.button}"> type="submit">Si me voy
+              </button>
+              <a th:href="@{/welcomeGet}" class="btn btn-success btn-lg" type="button" role="button" th:text="#{html.logout.logout.cancel}">>
+              No, me quedo un poco mas
+              </a>
+              
+              </form> 
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="row align-items-md-stretch">
+        <div class="col-md-12">
+
+        </div>
+
+      </div>
+    </section>
+
+    <script
+		th:replace="~{standardLayouts/standardLayoutFoot :: standardLayoutFoot1}"></script>
+
+
+  </body>
+
+</html>

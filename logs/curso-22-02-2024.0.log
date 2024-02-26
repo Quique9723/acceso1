@@ -1,0 +1,1209 @@
+22-02-2024 15:59:32 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.9 with PID 15252 (C:\Users\tarde\Documents\EclipseProjects\acceso1\target\classes started by tarde in C:\Users\tarde\Documents\EclipseProjects\acceso1)
+22-02-2024 15:59:32 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 JDBC repository interfaces.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 15:59:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 6 JPA repository interfaces.
+22-02-2024 15:59:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 15:59:33 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 15:59:33 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 15:59:33 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 15:59:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1581 ms
+22-02-2024 15:59:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 15:59:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 15:59:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 15:59:34 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 15:59:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 15:59:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 15:59:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 15:59:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 15:59:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 15:59:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 15:59:36 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 15:59:36 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 15:59:37 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d6cac57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@455591ad, org.springframework.security.web.context.SecurityContextHolderFilter@47184859, org.springframework.web.filter.CorsFilter@13157620, org.springframework.security.web.csrf.CsrfFilter@14ea3ecf, org.springframework.security.web.authentication.logout.LogoutFilter@15d0f2a3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@32dc895e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11564455, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@173c0722, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62a78446, org.springframework.security.web.access.ExceptionTranslationFilter@157e0f6b, org.springframework.security.web.access.intercept.AuthorizationFilter@409b1740]
+22-02-2024 15:59:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 15:59:37 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 6.294 seconds (process running for 6.99)
+22-02-2024 15:59:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 15:59:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 15:59:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22-02-2024 15:59:40 [http-nio-8080-exec-1] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 15:59:42 [http-nio-8080-exec-9] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 15:59:42 [http-nio-8080-exec-9] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 15:59:42 [http-nio-8080-exec-9] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 15:59:48 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 15:59:48 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 15:59:48 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= b47622c8-555c-406e-b8f0-d11d921a9176 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={ADMIN | USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ADMIN, USER]]
+22-02-2024 15:59:48 [http-nio-8080-exec-5] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 15:59:48 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 15:59:48 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 15:59:52 [http-nio-8080-exec-2] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 15:59:52 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:00:08 [http-nio-8080-exec-6] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:00:08 [http-nio-8080-exec-6] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:00:10 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:00:10 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet else
+22-02-2024 16:00:10 [http-nio-8080-exec-8] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-8] Exception processing template "dialectLayouts/centrals/familyProductDialectOperation": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor' (template: "dialectLayouts/centrals/familyProductDialectOperation" - line 32, col 34)
+org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor' (template: "dialectLayouts/centrals/familyProductDialectOperation" - line 32, col 34)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'entity' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:926)
+	at org.thymeleaf.spring6.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:232)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring6.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	... 115 common frames omitted
+22-02-2024 16:00:10 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/acceso1] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor' (template: "dialectLayouts/centrals/familyProductDialectOperation" - line 32, col 34)] with root cause
+java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'entity' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:926)
+	at org.thymeleaf.spring6.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:232)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring6.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+22-02-2024 16:00:14 [http-nio-8080-exec-10] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:00:14 [http-nio-8080-exec-10] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductOperationGet-view: id= 1> isPresent()
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty]
+22-02-2024 16:00:17 [http-nio-8080-exec-4] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:00:19 [http-nio-8080-exec-2] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:00:19 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:00:19 [http-nio-8080-exec-9] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:00:22 [http-nio-8080-exec-3] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:00:22 [http-nio-8080-exec-3] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductOperationGet-view: id= 1> isPresent()
+FamilyProduct [id=1, description=TEXTIL1, productList.size()=0,productList->names=Empty]
+22-02-2024 16:00:23 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:00:23 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:00:26 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:00:26 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "Foto_JAG.jpg"]
+22-02-2024 16:00:29 [http-nio-8080-exec-5] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:00:29 [http-nio-8080-exec-5] INFO  c.c.a.c.FamilyProductControllerImpl - pasa por guardado
+22-02-2024 16:00:29 [http-nio-8080-exec-2] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:00:29 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:00:31 [http-nio-8080-exec-6] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:00:31 [http-nio-8080-exec-6] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet else
+22-02-2024 16:00:31 [http-nio-8080-exec-6] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "dialectLayouts/centrals/familyProductDialectOperation": Error during execution of processor 'org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor' (template: "dialectLayouts/centrals/familyProductDialectOperation" - line 32, col 34)
+org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor' (template: "dialectLayouts/centrals/familyProductDialectOperation" - line 32, col 34)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:117)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'entity' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:926)
+	at org.thymeleaf.spring6.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:232)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring6.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	... 115 common frames omitted
+22-02-2024 16:00:31 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/acceso1] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor' (template: "dialectLayouts/centrals/familyProductDialectOperation" - line 32, col 34)] with root cause
+java.lang.IllegalStateException: Neither BindingResult nor plain target object for bean name 'entity' available as request attribute
+	at org.springframework.web.servlet.support.BindStatus.<init>(BindStatus.java:153)
+	at org.springframework.web.servlet.support.RequestContext.getBindStatus(RequestContext.java:926)
+	at org.thymeleaf.spring6.context.webmvc.SpringWebMvcThymeleafRequestContext.getBindStatus(SpringWebMvcThymeleafRequestContext.java:232)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatusFromParsedExpression(FieldUtils.java:306)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:253)
+	at org.thymeleaf.spring6.util.FieldUtils.getBindStatus(FieldUtils.java:227)
+	at org.thymeleaf.spring6.processor.AbstractSpringFieldTagProcessor.doProcess(AbstractSpringFieldTagProcessor.java:174)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:592)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:225)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+22-02-2024 16:04:42 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+22-02-2024 16:04:43 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:04:43 [RMI TCP Connection(8)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 16:04:43 [RMI TCP Connection(8)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 16:04:45 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.9 with PID 14332 (C:\Users\tarde\Documents\EclipseProjects\acceso1\target\classes started by tarde in C:\Users\tarde\Documents\EclipseProjects\acceso1)
+22-02-2024 16:04:45 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 JDBC repository interfaces.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 16:04:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
+22-02-2024 16:04:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 16:04:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 16:04:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 16:04:47 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 16:04:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1389 ms
+22-02-2024 16:04:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 16:04:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 16:04:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 16:04:47 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 16:04:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 16:04:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 16:04:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 16:04:48 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 16:04:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 16:04:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:04:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 16:04:49 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 16:04:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7bc46dde, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@409b1740, org.springframework.security.web.context.SecurityContextHolderFilter@1ae8556c, org.springframework.web.filter.CorsFilter@32dc895e, org.springframework.security.web.csrf.CsrfFilter@2b33e616, org.springframework.security.web.authentication.logout.LogoutFilter@61868687, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14acc33e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2da3d7d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f832df0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59e9ba7, org.springframework.security.web.access.ExceptionTranslationFilter@639d808a, org.springframework.security.web.access.intercept.AuthorizationFilter@42af2977]
+22-02-2024 16:04:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 16:04:50 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.334 seconds (process running for 5.939)
+22-02-2024 16:04:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 16:04:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 16:04:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22-02-2024 16:04:52 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 16:04:52 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 16:04:52 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 16:04:59 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 16:05:00 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:05:00 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 3c769182-c57e-4e97-9bfa-3c596114d03e LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={ADMIN | USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ADMIN, USER]]
+22-02-2024 16:05:00 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 16:05:00 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:05:00 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:05:01 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 16:05:02 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:05:04 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:05:04 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:05:05 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:05:05 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet else
+22-02-2024 16:05:07 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:05:07 [http-nio-8080-exec-2] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:05:07 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:05:09 [http-nio-8080-exec-4] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:05:09 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "Foto_JAG.jpg"]
+22-02-2024 16:05:13 [http-nio-8080-exec-6] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:05:13 [http-nio-8080-exec-6] INFO  c.c.a.c.FamilyProductControllerImpl - pasa por guardado
+22-02-2024 16:05:13 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:05:13 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:05:19 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:05:19 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet else
+22-02-2024 16:05:20 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:05:20 [http-nio-8080-exec-2] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:05:20 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:05:24 [http-nio-8080-exec-4] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:05:24 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:07:57 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+22-02-2024 16:07:57 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:07:57 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 16:07:57 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 16:19:21 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.7 with PID 14044 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+22-02-2024 16:19:21 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 0 JDBC repository interfaces.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 6 JPA repository interfaces.
+22-02-2024 16:19:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 16:19:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 16:19:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 16:19:23 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 16:19:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1376 ms
+22-02-2024 16:19:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 16:19:23 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 16:19:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 16:19:23 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 16:19:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 16:19:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 16:19:23 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 16:19:24 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 16:19:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 16:19:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:19:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 16:19:25 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 16:19:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b6ad2eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61868687, org.springframework.security.web.context.SecurityContextHolderFilter@14ea3ecf, org.springframework.web.filter.CorsFilter@2122b4bd, org.springframework.security.web.csrf.CsrfFilter@54151d07, org.springframework.security.web.authentication.logout.LogoutFilter@173c0722, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72364a40, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1252d480, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59b8a801, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5dd79a57, org.springframework.security.web.access.ExceptionTranslationFilter@c1d9c40, org.springframework.security.web.access.intercept.AuthorizationFilter@7c1adb8a]
+22-02-2024 16:19:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 16:19:26 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.266 seconds (process running for 5.803)
+22-02-2024 16:19:41 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 16:19:41 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 16:19:41 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22-02-2024 16:19:41 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 16:19:44 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 16:19:44 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 16:19:44 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 16:20:08 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 16:20:08 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:20:08 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 84b9d811-eb54-423f-89ec-4879c9ae7ee1 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={USER | ADMIN}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[USER, ADMIN]]
+22-02-2024 16:20:09 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 16:20:09 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:20:09 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:20:13 [http-nio-8080-exec-6] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 16:20:13 [http-nio-8080-exec-6] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:20:16 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:20:16 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:21:32 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 16:21:32 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:21:32 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 84b9d811-eb54-423f-89ec-4879c9ae7ee1 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=ana, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=ana@gmail.com, fullname=Ana Perez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[USER]]
+22-02-2024 16:21:32 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 16:21:32 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:21:32 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:21:45 [http-nio-8080-exec-4] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 16:21:45 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:21:50 [http-nio-8080-exec-5] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:21:50 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:22:04 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:22:04 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet else
+22-02-2024 16:22:09 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:36:34 [RMI TCP Connection(20)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+22-02-2024 16:36:34 [RMI TCP Connection(20)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:36:34 [RMI TCP Connection(20)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 16:36:34 [RMI TCP Connection(20)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 16:36:36 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.7 with PID 10300 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+22-02-2024 16:36:36 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 16:36:36 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.7 with PID 12636 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+22-02-2024 16:36:36 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 JDBC repository interfaces.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 6 JPA repository interfaces.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 JDBC repository interfaces.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 16:36:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
+22-02-2024 16:36:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 16:36:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 16:36:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 16:36:38 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 16:36:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1564 ms
+22-02-2024 16:36:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 16:36:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 16:36:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 16:36:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 16:36:38 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 16:36:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1530 ms
+22-02-2024 16:36:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 16:36:38 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 16:36:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 16:36:38 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 16:36:38 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 16:36:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 16:36:38 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 16:36:38 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 16:36:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 16:36:39 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 16:36:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 16:36:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 16:36:39 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 16:36:39 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 16:36:39 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 16:36:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 16:36:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:36:40 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 16:36:40 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:36:40 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 16:36:41 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 16:36:41 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 16:36:41 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 16:36:41 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ad2cb6d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b6ad2eb, org.springframework.security.web.context.SecurityContextHolderFilter@205d6f84, org.springframework.web.filter.CorsFilter@61868687, org.springframework.security.web.csrf.CsrfFilter@2e9bff08, org.springframework.security.web.authentication.logout.LogoutFilter@11564455, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c1adb8a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74f54f8e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1252d480, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2122b4bd, org.springframework.security.web.access.ExceptionTranslationFilter@2b33e616, org.springframework.security.web.access.intercept.AuthorizationFilter@3d339541]
+22-02-2024 16:36:41 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a23b96b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42af2977, org.springframework.security.web.context.SecurityContextHolderFilter@324ee3ca, org.springframework.web.filter.CorsFilter@14acc33e, org.springframework.security.web.csrf.CsrfFilter@693c7741, org.springframework.security.web.authentication.logout.LogoutFilter@7c1adb8a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15a87fbb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b186fb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f7dbdfa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6cbb79c3, org.springframework.security.web.access.ExceptionTranslationFilter@39bd07fe, org.springframework.security.web.access.intercept.AuthorizationFilter@2dacad1d]
+22-02-2024 16:36:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 16:36:42 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.828 seconds (process running for 6.445)
+22-02-2024 16:36:42 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+22-02-2024 16:36:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:36:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 16:36:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 16:36:42 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+22-02-2024 16:36:42 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+22-02-2024 16:36:48 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 16:36:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 16:36:48 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22-02-2024 16:36:49 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 16:36:49 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 16:36:49 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 16:36:49 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 16:36:49 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 16:36:49 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 16:36:59 [http-nio-8080-exec-5] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 16:36:59 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:36:59 [http-nio-8080-exec-5] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 9f8ed15e-3683-4175-a799-e68cafac25a1 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=ana, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=ana@gmail.com, fullname=Ana Perez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[USER]]
+22-02-2024 16:36:59 [http-nio-8080-exec-6] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 16:36:59 [http-nio-8080-exec-6] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:36:59 [http-nio-8080-exec-6] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:37:01 [http-nio-8080-exec-8] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 16:37:01 [http-nio-8080-exec-8] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:37:05 [http-nio-8080-exec-10] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:37:05 [http-nio-8080-exec-10] INFO  com.core.acceso1.data.model.User - Roles de: ana, Ana Perez: {USER}
+22-02-2024 16:37:28 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 16:37:29 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:37:29 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 9f8ed15e-3683-4175-a799-e68cafac25a1 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={ADMIN | USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ADMIN, USER]]
+22-02-2024 16:37:29 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 16:37:29 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:37:29 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+22-02-2024 16:37:31 [http-nio-8080-exec-4] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 16:37:31 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:37:34 [http-nio-8080-exec-6] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:37:34 [http-nio-8080-exec-6] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+22-02-2024 16:37:40 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet
+22-02-2024 16:37:40 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductperationGet else
+22-02-2024 16:51:25 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+22-02-2024 16:51:25 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:51:25 [RMI TCP Connection(18)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 16:51:25 [RMI TCP Connection(18)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 16:51:28 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.7 with PID 1716 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+22-02-2024 16:51:28 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 JDBC repository interfaces.
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 16:51:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 16:51:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 6 JPA repository interfaces.
+22-02-2024 16:51:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 16:51:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 16:51:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 16:51:29 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 16:51:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1375 ms
+22-02-2024 16:51:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 16:51:29 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 16:51:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 16:51:29 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 16:51:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 16:51:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 16:51:30 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 16:51:30 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 16:51:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 16:51:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 16:51:31 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 16:51:32 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 16:51:32 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@408708a1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f7b15bb, org.springframework.security.web.context.SecurityContextHolderFilter@5aa026e9, org.springframework.web.filter.CorsFilter@2dacad1d, org.springframework.security.web.csrf.CsrfFilter@4a1abba1, org.springframework.security.web.authentication.logout.LogoutFilter@37227aa7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15d0f2a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39bd07fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ca896af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15a87fbb, org.springframework.security.web.access.ExceptionTranslationFilter@1c61f9bf, org.springframework.security.web.access.intercept.AuthorizationFilter@40b7e68c]
+22-02-2024 16:51:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 16:51:32 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.299 seconds (process running for 5.88)
+22-02-2024 16:51:38 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 16:51:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 16:51:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+22-02-2024 16:51:38 [http-nio-8080-exec-1] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 16:51:38 [http-nio-8080-exec-1] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 16:51:38 [http-nio-8080-exec-1] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 16:51:39 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 16:51:39 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 16:51:39 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 16:51:40 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 16:51:40 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 16:51:40 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 16:51:40 [http-nio-8080-exec-6] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 16:51:40 [http-nio-8080-exec-6] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 16:51:40 [http-nio-8080-exec-6] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 16:51:50 [http-nio-8080-exec-7] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 16:51:50 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 16:51:50 [http-nio-8080-exec-7] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 7f2d7cb5-55ad-4680-aeda-836a110b9d2f LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=cliente1, password=$2a$12$LfQ2POVSk3GAgC5QkB16oOLPnP7vGq3Y3u/yu52m97oq0daGVoo5a, email=cliente1@gmail.com, fullname=Cliente Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={CUSTOMER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[CUSTOMER]]
+22-02-2024 16:51:50 [http-nio-8080-exec-8] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 16:51:50 [http-nio-8080-exec-8] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 16:51:50 [http-nio-8080-exec-8] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 16:52:16 [http-nio-8080-exec-10] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 16:52:16 [http-nio-8080-exec-10] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 16:52:19 [http-nio-8080-exec-2] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+22-02-2024 16:52:19 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:10:51 [RMI TCP Connection(24)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+22-02-2024 17:10:51 [RMI TCP Connection(24)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 17:10:51 [RMI TCP Connection(24)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 17:10:51 [RMI TCP Connection(24)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 17:10:53 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.7 with PID 16884 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+22-02-2024 17:10:53 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 17:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+22-02-2024 17:10:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 17:10:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 17:10:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 17:10:55 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 17:10:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1380 ms
+22-02-2024 17:10:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 17:10:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 17:10:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 17:10:55 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 17:10:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 17:10:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 17:10:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 17:10:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 17:10:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 17:10:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 17:10:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 17:10:57 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 17:10:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6cbb79c3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bc46dde, org.springframework.security.web.context.SecurityContextHolderFilter@5f7dbdfa, org.springframework.web.filter.CorsFilter@409b1740, org.springframework.security.web.csrf.CsrfFilter@21bf1b1f, org.springframework.security.web.authentication.logout.LogoutFilter@4b6ad2eb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42af2977, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@157e0f6b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2da3d7d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32dc895e, org.springframework.security.web.access.ExceptionTranslationFilter@324ee3ca, org.springframework.security.web.access.intercept.AuthorizationFilter@a23b96b]
+22-02-2024 17:10:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 17:10:58 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.235 seconds (process running for 5.804)
+22-02-2024 17:11:25 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 17:11:25 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 17:11:25 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22-02-2024 17:11:25 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 17:11:25 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 17:11:25 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 17:11:46 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 17:11:46 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:11:46 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 1840d314-04c0-4bc5-b476-bd662bc98b2e LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=cliente1, password=$2a$12$LfQ2POVSk3GAgC5QkB16oOLPnP7vGq3Y3u/yu52m97oq0daGVoo5a, email=cliente1@gmail.com, fullname=Cliente Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={CUSTOMER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[CUSTOMER]]
+22-02-2024 17:11:47 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 17:11:47 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:11:47 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:11:49 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 17:11:49 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:48:40 [RMI TCP Connection(41)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+22-02-2024 17:48:40 [RMI TCP Connection(41)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 17:48:40 [RMI TCP Connection(41)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 17:48:40 [RMI TCP Connection(41)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 17:48:42 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.7 with PID 16184 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+22-02-2024 17:48:42 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 JDBC repository interfaces.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 17:48:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 6 JPA repository interfaces.
+22-02-2024 17:48:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 17:48:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 17:48:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 17:48:44 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 17:48:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1372 ms
+22-02-2024 17:48:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 17:48:44 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 17:48:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 17:48:44 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 17:48:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 17:48:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 17:48:44 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 17:48:44 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 17:48:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 17:48:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 17:48:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 17:48:46 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 17:48:46 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57e2d15c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6810465, org.springframework.security.web.context.SecurityContextHolderFilter@7d3b4646, org.springframework.web.filter.CorsFilter@19e03398, org.springframework.security.web.csrf.CsrfFilter@324e62e2, org.springframework.security.web.authentication.logout.LogoutFilter@1ae8556c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@30b5f974, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21bf1b1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b33e616, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3d339541, org.springframework.security.web.access.ExceptionTranslationFilter@20f94e9a, org.springframework.security.web.access.intercept.AuthorizationFilter@28df2da8]
+22-02-2024 17:48:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 17:48:47 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.296 seconds (process running for 5.897)
+22-02-2024 17:48:57 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 17:48:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 17:48:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22-02-2024 17:48:57 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 17:48:57 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 17:48:57 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 17:49:16 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 17:49:16 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:49:16 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 53b01111-7060-4c44-87e5-df14677f9824 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=cliente1, password=$2a$12$LfQ2POVSk3GAgC5QkB16oOLPnP7vGq3Y3u/yu52m97oq0daGVoo5a, email=cliente1@gmail.com, fullname=Cliente Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={CUSTOMER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[CUSTOMER]]
+22-02-2024 17:49:16 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 17:49:16 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:49:17 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:49:20 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 17:49:20 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:49:31 [http-nio-8080-exec-7] INFO  c.c.a.c.CartControllerImpl - TRAZA cartAdd-GET controller
+22-02-2024 17:49:31 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 17:52:06 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+22-02-2024 17:52:06 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 17:52:06 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 17:52:06 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 17:59:55 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.7 with PID 2392 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+22-02-2024 17:59:55 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 JDBC repository interfaces.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 17:59:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 6 JPA repository interfaces.
+22-02-2024 17:59:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 17:59:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 17:59:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 17:59:57 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 17:59:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1407 ms
+22-02-2024 17:59:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 17:59:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 17:59:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 17:59:57 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 17:59:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 17:59:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 17:59:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 17:59:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 17:59:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 17:59:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 17:59:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 17:59:59 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 17:59:59 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@408708a1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f7b15bb, org.springframework.security.web.context.SecurityContextHolderFilter@5aa026e9, org.springframework.web.filter.CorsFilter@2dacad1d, org.springframework.security.web.csrf.CsrfFilter@4a1abba1, org.springframework.security.web.authentication.logout.LogoutFilter@37227aa7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15d0f2a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39bd07fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ca896af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15a87fbb, org.springframework.security.web.access.ExceptionTranslationFilter@1c61f9bf, org.springframework.security.web.access.intercept.AuthorizationFilter@40b7e68c]
+22-02-2024 18:00:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 18:00:00 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.318 seconds (process running for 5.891)
+22-02-2024 18:00:06 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 18:00:06 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 18:00:06 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22-02-2024 18:00:06 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 18:00:06 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+22-02-2024 18:00:06 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+22-02-2024 18:00:15 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 18:00:16 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:00:16 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= b494229a-66de-44b2-8dc7-0d6f59666f3b LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=cliente1, password=$2a$12$LfQ2POVSk3GAgC5QkB16oOLPnP7vGq3Y3u/yu52m97oq0daGVoo5a, email=cliente1@gmail.com, fullname=Cliente Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={CUSTOMER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[CUSTOMER]]
+22-02-2024 18:00:16 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 18:00:16 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:00:16 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:00:18 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 18:00:18 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:00:21 [http-nio-8080-exec-7] INFO  c.c.a.c.CartControllerImpl - TRAZA cartAdd-GET controller
+22-02-2024 18:00:21 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:27:14 [RMI TCP Connection(32)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+22-02-2024 18:27:14 [RMI TCP Connection(32)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 18:27:14 [RMI TCP Connection(32)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22-02-2024 18:27:14 [RMI TCP Connection(32)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22-02-2024 18:27:16 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 17.0.7 with PID 12732 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+22-02-2024 18:27:16 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 0 JDBC repository interfaces.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+22-02-2024 18:27:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
+22-02-2024 18:27:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+22-02-2024 18:27:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22-02-2024 18:27:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+22-02-2024 18:27:18 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+22-02-2024 18:27:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1398 ms
+22-02-2024 18:27:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22-02-2024 18:27:18 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+22-02-2024 18:27:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22-02-2024 18:27:18 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+22-02-2024 18:27:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+22-02-2024 18:27:19 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+22-02-2024 18:27:19 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+22-02-2024 18:27:19 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+22-02-2024 18:27:20 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+22-02-2024 18:27:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22-02-2024 18:27:20 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+22-02-2024 18:27:20 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22-02-2024 18:27:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37227aa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57e2d15c, org.springframework.security.web.context.SecurityContextHolderFilter@693c7741, org.springframework.web.filter.CorsFilter@6810465, org.springframework.security.web.csrf.CsrfFilter@533165e7, org.springframework.security.web.authentication.logout.LogoutFilter@5f7dbdfa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28df2da8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@175c4ae5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21bf1b1f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19e03398, org.springframework.security.web.access.ExceptionTranslationFilter@4a2bc71f, org.springframework.security.web.access.intercept.AuthorizationFilter@24489d12]
+22-02-2024 18:27:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+22-02-2024 18:27:21 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.315 seconds (process running for 5.87)
+22-02-2024 18:27:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22-02-2024 18:27:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+22-02-2024 18:27:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+22-02-2024 18:27:28 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+22-02-2024 18:27:28 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Drone, price=1.23, stock=100, pictureURL=https://mdbootstrap.com/img/new/ecommerce/horizontal/001.jpg, familyProduct=
+FamilyProduct [id=2, description=ELECTRONICA, productList.size()=2,productList->names=Drone, Cámara fotos]), Product(id=2, name=Cámara fotos, price=4.56, stock=200, pictureURL=https://mdbootstrap.com/img/new/ecommerce/horizontal/025.jpg, familyProduct=
+FamilyProduct [id=2, description=ELECTRONICA, productList.size()=2,productList->names=Drone, Cámara fotos]), Product(id=3, name=Mochila, price=7.89, stock=300, pictureURL=https://mdbootstrap.com/img/new/ecommerce/horizontal/050.jpg, familyProduct=
+FamilyProduct [id=1, description=TEXTIL, productList.size()=1,productList->names=Mochila])]
+22-02-2024 18:27:28 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=1,productList->names=Mochila], 
+FamilyProduct [id=2, description=ELECTRONICA, productList.size()=2,productList->names=Drone, Cámara fotos], 
+FamilyProduct [id=3, description=ALIMENTACION, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=4, description=DROGERÍA, productList.size()=0,productList->names=Empty]]
+22-02-2024 18:27:39 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+22-02-2024 18:27:39 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:27:39 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= cc4cffa5-c046-4d7f-9337-9d724a7b70da LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=cliente1, password=$2a$12$LfQ2POVSk3GAgC5QkB16oOLPnP7vGq3Y3u/yu52m97oq0daGVoo5a, email=cliente1@gmail.com, fullname=Cliente Sanchez, expiryDateAccount=2024-05-22, lockedAccount=false, expiryDateCredentials=2024-04-22, enabled=true, roleSet={CUSTOMER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[CUSTOMER]]
+22-02-2024 18:27:39 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+22-02-2024 18:27:39 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:27:39 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:27:41 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+22-02-2024 18:27:41 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}
+22-02-2024 18:27:47 [http-nio-8080-exec-7] INFO  c.c.a.c.CartControllerImpl - TRAZA cartAdd-GET controller
+22-02-2024 18:27:47 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: cliente1, Cliente Sanchez: {CUSTOMER}

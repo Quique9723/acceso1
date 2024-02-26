@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+		xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+  <head th:replace="~{standardLayouts/standardLayoutHead :: standardLayoutHead1}"></head>
+
+  <body>
+
+
+
+
+    <section class="pb-5 pt-5 bg-dark text-light">
+      <div class="block pt-5 pb-5 text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+
+              <h4 class="mt-5 mb-5 text-white" th:text="#{html.login.title}">
+                Join over 900,000 designers already using Bootstrap. Get
+                Bootstrap <strong>free</strong> forever!
+              </h4>
+              
+              <div th:if="${param.logoutOk}">
+              <p class = "h3 card-text text-center" style="color:green"
+              th:text="'Desconexion correcta!! Puedes entrar de nuevo'">
+              </p>
+              </div>
+              
+              <div th:if="${param.malformedCredentials}">
+              <p class = "h3 card-text text-center" style="color:yellow"
+              th:text="'Usuario/Password no validados Prueba de nuevo'">
+              </p>
+              </div>
+              
+              <div th:if="${param.loginError}">
+              <p class = "h3 card-text text-center" style="color:red"
+              th:text="'Login error! Habla con el administrador'">
+              </p>
+              </div>
+              
+              <div th:if="${param.badCredentials}">
+              <p class = "h3 card-text text-center" style="color:yellow"
+              th:text="'Credenciales erroneas! Prueba de nuevo'">
+              </p>
+              </div>
+              
+              <div th:if="${param.lockedAccount}">
+              <p class = "h3 card-text text-center" style="color:red"
+              th:text="'Cuenta bloqueada!! Habla con el administrador'">
+              </p>
+              </div>
+              
+              <div th:if="${param.disabledAccount}">
+              <p class = "h3 card-text text-center" style="color:yellow"
+              th:text="'Cuenta desactivada!! Habla con el administrador'">
+              </p>
+              </div>
+              
+              <div th:if="${param.credentialsExpired}">
+              <p class = "h3 card-text text-center" style="color:red"
+              th:text="'Credenciales caducadas! Habla con el administrador!'">
+              </p>
+              </div>
+              
+              <div th:if="${param.accountExpired}">
+              <p class = "h3 card-text text-center" style="color:red"
+              th:text="'Cuenta caducada! Habla con el administrador.'">
+              </p>
+              </div>
+              
+              
+              
+              
+              <form th:action="@{/loginPost}" th:object="${login}" method="POST"
+              		class="form-inline d-flex justify-content-center h-25">
+                <input th:field="*{username}" class="form-control  form-control mb-3"
+                		placeholder="Nombre de usuario">
+                <input th:field="*{password}"class="form-control form-control mb-3 mx-1"
+                  type="password" placeholder="Password del usuario">
+                <button type="submit"
+                  class="btn btn-primary w-100 btn-round mb-3 btn-rised" th:text="#{html.login.login.button}">>Login
+                   </button>
+              </form>
+              <p class="text-muted m-3">
+                By clicking "Login" I agree to 
+                <a href="#">Terms of service</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block block-bordered text-center">
+        <div class="container-fluid">
+          <blockquote class="pull-quote text-light mt-3">
+            <p>
+              “Notice that simple inset border above. Is not it lovely.”
+            </p>
+            <cite>Mark Otto, Huge Nerd</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+   <script
+		th:replace="~{standardLayouts/standardLayoutFoot :: standardLayoutFoot1}"></script>
+     
+
+
+  </body>
+
+</html>

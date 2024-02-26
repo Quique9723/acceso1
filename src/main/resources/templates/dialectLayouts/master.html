@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"      
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+  	<div th:replace="~{dialectLayouts/dialectLayoutHead :: dialectLayoutHead1}" class="container">
+		<p> HEAD</p>		
+	</div>
+
+  <body>
+  
+	  <div class="bg-dark vh-100">
+	  
+	  	<div th:replace="~{dialectLayouts/dialectLayoutNavbar :: dialectLayoutNavbar1}" class="container">
+			<p> BARRA DE MENU</p>		
+		</div>
+	
+	  	<main layout:fragment="dialectLayoutCentral" role="main" class="text-warning">
+			<p> FRAGMENTO CENTRAL</p>		
+		</main>
+		<div th:replace="~{dialectLayouts/dialectLayoutCredit :: dialectLayoutCredit1}" class="container">
+			<p>CREDITS</p>		
+		</div>
+	    
+	  	<div th:replace="~{dialectLayouts/dialectLayoutFoot :: dialectLayoutFoot1}" class="container">
+			<p> FOOTER CON LOS SCRIPTS</p>		
+		</div>
+		
+	  </div>
+
+  </body>
+
+</html>

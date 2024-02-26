@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"      
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	  layout:decorate="~{dialectLayouts/master}">
+
+
+
+
+     <main layout:fragment="dialectLayoutCentral" role="main" class="pt-5 pb-5 bg-dark text-white">
+      <div class="container">
+        <div class="row w-100">
+          <div class="col-lg-12 col-md-12 col-12">
+          
+          <div th:if="${flashMessage != null}" th:text="${flashMessage}"
+          class="alert alert-dimiddible fade show" role="alert">
+          
+          </div>
+          
+         <!-- <p th:text="'familyProductList: ' + ${familyProductList}"></p> --> 
+          
+            <h3 class="display-5 mb-2 text-white" th:text="#{html.familyProductDialectList.title}">
+              Table Prices
+            </h3>
+           
+            <div class="table-responsive bg-light">
+              <table class="table   table-hover text-start text-dark">
+                <thead class="">
+                  <tr class="bgd-gradient-blue  ">
+                    <th th:text="#{html.familyProductDialectList.table.id}"></th>
+                    <th th:text="#{html.familyProductDialectList.table.description}"></th>
+                    <th th:text="#{html.familyProductDialectList.table.productList}"></th>
+                    <th th:text="#{html.familyProductDialectList.table.view}"></th>
+                    <th th:text="#{html.familyProductDialectList.table.update}"></th>
+                    <th th:text="#{html.familyProductDialectList.table.delete}"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr th:each="item : ${familyProductList}">
+                    <td th:text="${item.getId()}"></td>
+                    <td th:text="${item.getDescription()}"></td>
+                   <!-- <td th:text="${item.productList}"></td> --> 
+                    <td >
+                    <ul>
+                    	<li th:each="subitem : ${item.productList}" th:text="${subitem.name}"></li>
+                    	
+                    </ul>
+                    </td>
+                    <td>
+                    <a th:href="@{/familyProduct/view/} + ${item.getId()}"
+                    th:text="#{html.familyProductDialectList.table.view}"
+                    role="button" class="btn btn-primary">
+                    </a>
+                    </td>
+                      <td>
+                    <a th:href="@{/familyProduct/update/} + ${item.getId()}"
+                    th:text="#{html.familyProductDialectList.table.update}"
+                    role="button" class="btn btn-warning">
+                    </a>
+                    </td>
+                      <td>
+                    <a th:href="@{/familyProduct/delete/} + ${item.getId()}"
+                    th:text="#{html.familyProductDialectList.table.delete}"
+                    role="button" class="btn btn-danger">
+                    </a>
+                    </td>
+                  
+                  </tr>
+  
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+   </html>

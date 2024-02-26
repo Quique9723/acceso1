@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+
+
+<head th:replace="~{standardLayouts/standardLayoutHead :: standardLayoutHead1}"></head>
+
+
+
+<body>
+
+
+
+
+	<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark"
+		style="min-height: 100vh; background-size: cover; background-image: url(&quot;https://images.unsplash.com/photo-1517216015940-049a2d4e2da4?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=14035a7d76df29c4697de036fcd005ce&quot;);">
+		<div class="container ">    
+			<section th:replace="~{standardLayouts/standardLayoutCover :: standardLayoutCover1}"></section>
+			<div class="row align-items-center d-flex justify-content-between">
+				<div class="col-12 col-md-6 pb-5 order-2 order-sm-2 ">
+					<h1 class="  text-success fw-bold mb-3 mt-5 display-3 text-shadow-lg">Win Your
+						Market.</h1>
+						
+						<h1 class="text-success fw-bold mb-3 mt-5 display-3"
+						th:text="'Bienvenido ' + ${#authentication.principal.username}"></h1>
+						<h1 class="text-success fw-bold mb-3 mt-5 display-3"
+						th:text="'Roles ' + ${#authentication.principal.authorities}"></h1>
+						
+					<p class="lead text-white">Aplicación realizada por los alumnos
+						del curso Dam.</p>
+
+					<p class="text-light"
+						th:text="'Media de los productos de la familia 4= ' + ${priceAverage}">
+					</p>
+
+					<p class="text-warning"
+						th:text="'Lista de Familia de Productos= ' "></p>
+
+					<div th:each="item : ${familyProductList}">
+						<p class="text-warning" th:text="${item.description}"></p>
+					</div>
+
+					<p class="text-light"
+						th:text="'Lista de Productos= ' + ${productList}"></p>
+
+					<div class=" d-flex mt-3 mb-1">
+						<a
+							class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3"
+							th:href="@{/startLogged}" role="button">Continuar</a>
+					</div>
+					<div class=" d-flex mt-3 mb-1">
+						<a
+							class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3"
+							th:href="@{/logoutGet}" role="button">Logout</a>
+
+					</div>
+					<div sec:authorize="hasAuthority('ADMIN')" class=" d-flex mt-3 mb-1">
+						<a
+							class="btn btn-primary btn-raised text-uppercase btn-lg  mt-md-3"
+							th:href="@{/welcomeMyTestsGet}" role="button">Pruebas</a>
+					</div>
+					<div class="col-12 col-md-6 order-sm-1 order-md-2  ">
+						<div
+							class="icon-wrap text-primary d-flex justify-content-md-center my-3">
+							<button href="#"
+								class="icon d-flex border-0 align-items-center justify-content-center bg-white text-dark shadow-lg rounded-circle "
+								style="width: 70px; height: 70px">
+								<i class=" fas fa-play fa-lg ml-1"></i>
+							</button>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<script
+		th:replace="~{standardLayouts/standardLayoutFoot :: standardLayoutFoot1}"></script>
+		
+
+
+</body>
+
+</html>

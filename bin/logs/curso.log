@@ -1,0 +1,609 @@
+16-02-2024 15:41:49 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 13004 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 15:41:49 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 JDBC repository interfaces.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 15:41:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
+16-02-2024 15:41:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 15:41:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 15:41:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 15:41:50 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 15:41:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1586 ms
+16-02-2024 15:41:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 15:41:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 15:41:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 15:41:51 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 15:41:51 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 15:41:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 15:41:51 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 15:41:51 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 15:41:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 15:41:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 15:41:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 15:41:53 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 15:41:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18372705, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@418f0f27, org.springframework.security.web.context.SecurityContextHolderFilter@31e5d408, org.springframework.web.filter.CorsFilter@427946b9, org.springframework.security.web.csrf.CsrfFilter@3095c449, org.springframework.security.web.authentication.logout.LogoutFilter@628af295, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c11ec9b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@638b05fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77e42cbf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@fe58644, org.springframework.security.web.access.ExceptionTranslationFilter@59e24c62, org.springframework.security.web.access.intercept.AuthorizationFilter@4c32aa7e]
+16-02-2024 15:41:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 15:41:54 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.917 seconds (process running for 6.575)
+16-02-2024 15:42:05 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16-02-2024 15:42:05 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16-02-2024 15:42:05 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16-02-2024 15:42:06 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 15:42:12 [http-nio-8080-exec-10] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 15:42:12 [http-nio-8080-exec-10] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 15:42:12 [http-nio-8080-exec-10] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 15:42:21 [http-nio-8080-exec-1] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+16-02-2024 15:42:21 [http-nio-8080-exec-1] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 15:42:21 [http-nio-8080-exec-1] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 5d9b2274-e945-4a85-9d6e-233c02caf072 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-16, lockedAccount=false, expiryDateCredentials=2024-04-16, enabled=true, roleSet={USER | ADMIN}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[USER, ADMIN]]
+16-02-2024 15:42:21 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 15:42:21 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 15:42:21 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 15:42:24 [http-nio-8080-exec-8] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+16-02-2024 15:42:24 [http-nio-8080-exec-8] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 15:42:31 [http-nio-8080-exec-3] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 15:42:31 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 15:42:43 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 15:42:50 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdateGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 15:42:55 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 15:43:00 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdateGet: id= 1 > 
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty]
+16-02-2024 15:43:19 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdateGet: id= 2 > 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty]
+16-02-2024 16:12:51 [RMI TCP Connection(33)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16-02-2024 16:12:51 [RMI TCP Connection(33)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:12:51 [RMI TCP Connection(33)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16-02-2024 16:12:51 [RMI TCP Connection(33)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16-02-2024 16:12:54 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 3044 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 16:12:54 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 JDBC repository interfaces.
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:12:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 16:12:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 6 JPA repository interfaces.
+16-02-2024 16:12:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 16:12:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 16:12:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 16:12:55 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 16:12:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1397 ms
+16-02-2024 16:12:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 16:12:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 16:12:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 16:12:55 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 16:12:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 16:12:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 16:12:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 16:12:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 16:12:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 16:12:57 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:12:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 16:12:58 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 16:12:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@418f0f27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@427946b9, org.springframework.security.web.context.SecurityContextHolderFilter@7aaf0f0a, org.springframework.web.filter.CorsFilter@fe58644, org.springframework.security.web.csrf.CsrfFilter@236bb278, org.springframework.security.web.authentication.logout.LogoutFilter@31c17fd4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@fd8513b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77e42cbf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68bef3df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ecb87b2, org.springframework.security.web.access.ExceptionTranslationFilter@5379488c, org.springframework.security.web.access.intercept.AuthorizationFilter@c11ec9b]
+16-02-2024 16:12:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 16:12:58 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.274 seconds (process running for 5.87)
+16-02-2024 16:13:46 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16-02-2024 16:13:46 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:13:46 [RMI TCP Connection(5)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16-02-2024 16:13:46 [RMI TCP Connection(5)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16-02-2024 16:13:55 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 2404 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 16:13:55 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 JDBC repository interfaces.
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:13:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 16:13:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 6 JPA repository interfaces.
+16-02-2024 16:13:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 16:13:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 16:13:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 16:13:56 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 16:13:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1336 ms
+16-02-2024 16:13:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 16:13:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 16:13:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 16:13:56 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 16:13:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 16:13:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 16:13:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 16:13:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 16:13:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 16:13:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:13:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 16:13:59 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 16:13:59 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@fd8513b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18372705, org.springframework.security.web.context.SecurityContextHolderFilter@744c16fb, org.springframework.web.filter.CorsFilter@418f0f27, org.springframework.security.web.csrf.CsrfFilter@1695f7cb, org.springframework.security.web.authentication.logout.LogoutFilter@49e54217, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c32aa7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7aaf0f0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@638b05fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@427946b9, org.springframework.security.web.access.ExceptionTranslationFilter@126ae0ca, org.springframework.security.web.access.intercept.AuthorizationFilter@25865fca]
+16-02-2024 16:13:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 16:13:59 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.197 seconds (process running for 5.806)
+16-02-2024 16:14:06 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16-02-2024 16:14:06 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16-02-2024 16:14:06 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16-02-2024 16:14:06 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:14:06 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:14:06 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:14:12 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+16-02-2024 16:14:12 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:14:12 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 9ea60e7b-14a7-43b0-ba2f-6e3c53a1db48 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-16, lockedAccount=false, expiryDateCredentials=2024-04-16, enabled=true, roleSet={USER | ADMIN}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[USER, ADMIN]]
+16-02-2024 16:14:13 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 16:14:13 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:14:13 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:14:14 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+16-02-2024 16:14:14 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:14:17 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:14:17 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:14:21 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:14:25 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdateGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:14:30 [http-nio-8080-exec-3] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdatePost: entity = 
+FamilyProduct [id=3, description=DEPORTESS, productList.size()=1,productList->names=Raqueta] > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:14:30 [http-nio-8080-exec-4] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:14:30 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:14:37 [http-nio-8080-exec-6] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTESS, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:14:49 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTESS, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:14:50 [http-nio-8080-exec-5] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTESS, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:14:53 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:14:53 [http-nio-8080-exec-1] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:19:08 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:19:08 [http-nio-8080-exec-9] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:19:09 [http-nio-8080-exec-6] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:19:09 [http-nio-8080-exec-6] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:19:11 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:19:11 [http-nio-8080-exec-1] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:19:14 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:19:14 [http-nio-8080-exec-8] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:19:19 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16-02-2024 16:19:19 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:19:19 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16-02-2024 16:19:19 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16-02-2024 16:19:21 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 14488 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 16:19:21 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 JDBC repository interfaces.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 16:19:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 6 JPA repository interfaces.
+16-02-2024 16:19:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 16:19:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 16:19:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 16:19:22 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 16:19:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1382 ms
+16-02-2024 16:19:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 16:19:23 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 16:19:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 16:19:23 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 16:19:23 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 16:19:23 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 16:19:23 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 16:19:23 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 16:19:24 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 16:19:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:19:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 16:19:25 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 16:19:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31c17fd4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60052518, org.springframework.security.web.context.SecurityContextHolderFilter@5982255e, org.springframework.web.filter.CorsFilter@39336f5, org.springframework.security.web.csrf.CsrfFilter@3979c6e8, org.springframework.security.web.authentication.logout.LogoutFilter@2972b493, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49e54217, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e9c5db9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@393aac93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36b86248, org.springframework.security.web.access.ExceptionTranslationFilter@3eb29382, org.springframework.security.web.access.intercept.AuthorizationFilter@1418a1bd]
+16-02-2024 16:19:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 16:19:26 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.312 seconds (process running for 5.931)
+16-02-2024 16:19:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16-02-2024 16:19:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16-02-2024 16:19:28 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16-02-2024 16:19:29 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:19:29 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:19:29 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:19:33 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+16-02-2024 16:19:34 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:19:34 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= dfd1fc56-7ca7-468a-b4af-7f2ba4d5a25a LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-16, lockedAccount=false, expiryDateCredentials=2024-04-16, enabled=true, roleSet={ADMIN | USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ADMIN, USER]]
+16-02-2024 16:19:34 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 16:19:34 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:19:34 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:19:35 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+16-02-2024 16:19:35 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:19:39 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:19:39 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:19:41 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:19:54 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 4 > 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]
+16-02-2024 16:20:10 [http-nio-8080-exec-3] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:20:10 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:20:12 [http-nio-8080-exec-5] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 1 > 
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty]
+16-02-2024 16:23:48 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16-02-2024 16:23:48 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:23:48 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16-02-2024 16:23:48 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16-02-2024 16:23:50 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 17048 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 16:23:50 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 16:23:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+16-02-2024 16:23:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 16:23:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 16:23:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 16:23:52 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 16:23:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1338 ms
+16-02-2024 16:23:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 16:23:52 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 16:23:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 16:23:52 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 16:23:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 16:23:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 16:23:52 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 16:23:52 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 16:23:53 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 16:23:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:23:54 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 16:23:54 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 16:23:54 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ab87cb8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ac1544f, org.springframework.security.web.context.SecurityContextHolderFilter@362fbd98, org.springframework.web.filter.CorsFilter@4578d654, org.springframework.security.web.csrf.CsrfFilter@5d414943, org.springframework.security.web.authentication.logout.LogoutFilter@38f2342b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45594dfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2620264e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@126ae0ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25865fca, org.springframework.security.web.access.ExceptionTranslationFilter@71dac63f, org.springframework.security.web.access.intercept.AuthorizationFilter@cbd9494]
+16-02-2024 16:23:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 16:23:55 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.168 seconds (process running for 5.775)
+16-02-2024 16:23:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16-02-2024 16:23:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16-02-2024 16:23:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16-02-2024 16:23:58 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:23:58 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:23:58 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:24:03 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+16-02-2024 16:24:03 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:24:03 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= e1d4812d-e929-472f-8269-827dbcecc0c9 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-16, lockedAccount=false, expiryDateCredentials=2024-04-16, enabled=true, roleSet={ADMIN | USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ADMIN, USER]]
+16-02-2024 16:24:03 [http-nio-8080-exec-5] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 16:24:03 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:24:04 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:24:05 [http-nio-8080-exec-4] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+16-02-2024 16:24:05 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:24:10 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:24:10 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:24:11 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:24:52 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16-02-2024 16:24:52 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:24:52 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16-02-2024 16:24:52 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16-02-2024 16:24:54 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 12844 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 16:24:54 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 JDBC repository interfaces.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 16:24:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 6 JPA repository interfaces.
+16-02-2024 16:24:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 16:24:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 16:24:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 16:24:56 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 16:24:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1374 ms
+16-02-2024 16:24:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 16:24:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 16:24:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 16:24:56 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 16:24:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 16:24:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 16:24:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 16:24:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 16:24:57 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 16:24:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:24:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 16:24:58 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 16:24:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c11ec9b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fd8513b, org.springframework.security.web.context.SecurityContextHolderFilter@5379488c, org.springframework.web.filter.CorsFilter@18372705, org.springframework.security.web.csrf.CsrfFilter@4c5d1649, org.springframework.security.web.authentication.logout.LogoutFilter@1418a1bd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25865fca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31e5d408, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7aaf0f0a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@418f0f27, org.springframework.security.web.access.ExceptionTranslationFilter@2620264e, org.springframework.security.web.access.intercept.AuthorizationFilter@4578d654]
+16-02-2024 16:24:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 16:24:59 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.209 seconds (process running for 5.814)
+16-02-2024 16:25:08 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16-02-2024 16:25:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16-02-2024 16:25:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16-02-2024 16:25:08 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:25:08 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:25:08 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:25:13 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+16-02-2024 16:25:14 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:25:14 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 0b2673ce-d110-4a01-8a9e-6f715eaaa66c LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-16, lockedAccount=false, expiryDateCredentials=2024-04-16, enabled=true, roleSet={USER | ADMIN}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[USER, ADMIN]]
+16-02-2024 16:25:14 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 16:25:14 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:25:14 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:25:17 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+16-02-2024 16:25:17 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:25:20 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:25:20 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:25:22 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductViewGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:25:22 [http-nio-8080-exec-10] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:25:22 [http-nio-8080-exec-10] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:26:53 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16-02-2024 16:26:53 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:26:53 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16-02-2024 16:26:53 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16-02-2024 16:26:55 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 6188 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 16:26:55 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 JDBC repository interfaces.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 16:26:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+16-02-2024 16:26:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 16:26:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 16:26:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 16:26:57 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 16:26:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1334 ms
+16-02-2024 16:26:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 16:26:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 16:26:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 16:26:57 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 16:26:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 16:26:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 16:26:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 16:26:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 16:26:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 16:26:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:26:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 16:26:59 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 16:26:59 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ac1544f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4578d654, org.springframework.security.web.context.SecurityContextHolderFilter@11e36e5c, org.springframework.web.filter.CorsFilter@25865fca, org.springframework.security.web.csrf.CsrfFilter@5481001f, org.springframework.security.web.authentication.logout.LogoutFilter@68312b85, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f67ff3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@126ae0ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59e24c62, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c32aa7e, org.springframework.security.web.access.ExceptionTranslationFilter@36003e90, org.springframework.security.web.access.intercept.AuthorizationFilter@45594dfe]
+16-02-2024 16:27:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 16:27:00 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.185 seconds (process running for 5.786)
+16-02-2024 16:27:04 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16-02-2024 16:27:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16-02-2024 16:27:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+16-02-2024 16:27:04 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:27:04 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:27:04 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:27:10 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+16-02-2024 16:27:10 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:27:10 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= c7f9d853-9b77-4bbd-b019-1d470388ae8a LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-16, lockedAccount=false, expiryDateCredentials=2024-04-16, enabled=true, roleSet={ADMIN | USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ADMIN, USER]]
+16-02-2024 16:27:10 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 16:27:10 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:27:10 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:27:15 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+16-02-2024 16:27:15 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:27:19 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:27:19 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:27:20 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdateGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:30:33 [http-nio-8080-exec-3] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdatePost: entity = 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta] > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:30:33 [http-nio-8080-exec-4] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:30:33 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:41:09 [http-nio-8080-exec-8] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdateGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:41:20 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdatePost: entity = 
+FamilyProduct [id=3, description=DEPORTESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, productList.size()=1,productList->names=Raqueta] > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:41:20 [http-nio-8080-exec-1] INFO  c.c.a.c.FamilyProductControllerImpl - Hay errores de validacion [Field error in object 'familyProduct' on field 'description': rejected value [DEPORTESaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]; codes [Size.familyProduct.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [familyProduct.description,description]; arguments []; default message [description],25,1]; default message [Campo descripcion debe tener entre 1 y 25 caracteres]]
+16-02-2024 16:48:23 [RMI TCP Connection(26)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16-02-2024 16:48:23 [RMI TCP Connection(26)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:48:23 [RMI TCP Connection(26)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16-02-2024 16:48:23 [RMI TCP Connection(26)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16-02-2024 16:48:25 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 15108 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 16:48:25 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 16:48:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 6 JPA repository interfaces.
+16-02-2024 16:48:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 16:48:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 16:48:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 16:48:26 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 16:48:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1374 ms
+16-02-2024 16:48:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 16:48:27 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 16:48:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 16:48:27 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 16:48:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 16:48:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 16:48:27 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 16:48:27 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 16:48:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 16:48:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:48:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 16:48:29 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 16:48:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ab87cb8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ac1544f, org.springframework.security.web.context.SecurityContextHolderFilter@362fbd98, org.springframework.web.filter.CorsFilter@4578d654, org.springframework.security.web.csrf.CsrfFilter@5d414943, org.springframework.security.web.authentication.logout.LogoutFilter@38f2342b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45594dfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2620264e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@126ae0ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25865fca, org.springframework.security.web.access.ExceptionTranslationFilter@71dac63f, org.springframework.security.web.access.intercept.AuthorizationFilter@cbd9494]
+16-02-2024 16:48:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 16:48:30 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.335 seconds (process running for 5.954)
+16-02-2024 16:48:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16-02-2024 16:48:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16-02-2024 16:48:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+16-02-2024 16:48:35 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:48:35 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:48:35 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:48:35 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:48:35 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:48:35 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:48:35 [http-nio-8080-exec-6] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:48:35 [http-nio-8080-exec-6] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:48:35 [http-nio-8080-exec-6] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:48:42 [http-nio-8080-exec-7] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+16-02-2024 16:48:43 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:48:43 [http-nio-8080-exec-7] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= f89af7ce-5968-4fd9-bc13-25f964c7d780 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-16, lockedAccount=false, expiryDateCredentials=2024-04-16, enabled=true, roleSet={ADMIN | USER}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ADMIN, USER]]
+16-02-2024 16:48:43 [http-nio-8080-exec-8] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 16:48:43 [http-nio-8080-exec-8] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:48:43 [http-nio-8080-exec-8] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:48:45 [http-nio-8080-exec-10] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+16-02-2024 16:48:45 [http-nio-8080-exec-10] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:48:48 [http-nio-8080-exec-2] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:48:48 [http-nio-8080-exec-2] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:48:50 [http-nio-8080-exec-4] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdateGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
+16-02-2024 16:49:15 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16-02-2024 16:49:15 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:49:15 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16-02-2024 16:49:15 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16-02-2024 16:49:17 [main] INFO  com.core.acceso1.Acceso1Application - Starting Acceso1Application using Java 19.0.1 with PID 4600 (C:\Users\tarde\eclipse-workspace\acceso1\target\classes started by tarde in C:\Users\tarde\eclipse-workspace\acceso1)
+16-02-2024 16:49:17 [main] INFO  com.core.acceso1.Acceso1Application - No active profile set, falling back to 1 default profile: "default"
+16-02-2024 16:49:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:49:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IFamilyProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderLineRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IOrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.core.acceso1.data.repository.IUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 0 JDBC repository interfaces.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16-02-2024 16:49:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 6 JPA repository interfaces.
+16-02-2024 16:49:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16-02-2024 16:49:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16-02-2024 16:49:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+16-02-2024 16:49:18 [main] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring embedded WebApplicationContext
+16-02-2024 16:49:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1406 ms
+16-02-2024 16:49:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16-02-2024 16:49:19 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecommercedb user=SAS
+16-02-2024 16:49:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16-02-2024 16:49:19 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:ecommercedb'
+16-02-2024 16:49:19 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16-02-2024 16:49:19 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+16-02-2024 16:49:19 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+16-02-2024 16:49:19 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+16-02-2024 16:49:20 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+16-02-2024 16:49:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16-02-2024 16:49:21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16-02-2024 16:49:21 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+16-02-2024 16:49:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49e54217, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@628af295, org.springframework.security.web.context.SecurityContextHolderFilter@209baf91, org.springframework.web.filter.CorsFilter@31c17fd4, org.springframework.security.web.csrf.CsrfFilter@320ca97c, org.springframework.security.web.authentication.logout.LogoutFilter@7234db3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7594d189, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5982255e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7306836f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60052518, org.springframework.security.web.access.ExceptionTranslationFilter@236bb278, org.springframework.security.web.access.intercept.AuthorizationFilter@5c6ee543]
+16-02-2024 16:49:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/acceso1'
+16-02-2024 16:49:22 [main] INFO  com.core.acceso1.Acceso1Application - Started Acceso1Application in 5.419 seconds (process running for 6.025)
+16-02-2024 16:49:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/acceso1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16-02-2024 16:49:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16-02-2024 16:49:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+16-02-2024 16:49:22 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - TRAZA login controller get
+16-02-2024 16:49:22 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de Product: [Product(id=1, name=Collar, price=1.23, stock=100, pictureURL=collar picture 1, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]), Product(id=2, name=Raqueta, price=4.56, stock=200, pictureURL=raqueta picture 2, familyProduct=
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]), Product(id=3, name=Abrigo, price=7.89, stock=300, pictureURL=abrigo picture 3, familyProduct=
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo])]
+16-02-2024 16:49:22 [http-nio-8080-exec-2] INFO  c.c.a.c.StartControllerImpl - Lista de FamilyProduct: [
+FamilyProduct [id=1, description=TEXTIL, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=2, description=JUGUETES, productList.size()=0,productList->names=Empty], 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta], 
+FamilyProduct [id=4, description=JOYAS, productList.size()=2,productList->names=Collar, Abrigo]]
+16-02-2024 16:49:32 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: método login-POST
+16-02-2024 16:49:32 [http-nio-8080-exec-3] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:49:32 [http-nio-8080-exec-3] INFO  c.c.a.c.StartControllerImpl - TRAZA: login-Post > Session Id= 2fbf721c-f2f5-4cec-82b2-92ab68419be2 LOGADO! UsernamePasswordAuthenticationToken [Principal=User [username=luis, password=$2a$12$FnYgANwXz4fewUboItszeudf/tBxqy10r0XJBc.FWwkUDn.HCV.qC, email=luis@gmail.com, fullname=Luis Sanchez, expiryDateAccount=2024-05-16, lockedAccount=false, expiryDateCredentials=2024-04-16, enabled=true, roleSet={USER | ADMIN}], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[USER, ADMIN]]
+16-02-2024 16:49:32 [http-nio-8080-exec-4] INFO  c.c.a.c.StartControllerImpl - TRAZA index controller
+16-02-2024 16:49:32 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {USER|ADMIN}
+16-02-2024 16:49:32 [http-nio-8080-exec-4] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:49:40 [http-nio-8080-exec-5] INFO  c.c.a.c.StartLoggedControllerImpl - TRAZA startLogged-GET controller
+16-02-2024 16:49:40 [http-nio-8080-exec-5] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:49:45 [http-nio-8080-exec-7] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA startLoggedServicesFamilyProduct-GET controller
+16-02-2024 16:49:45 [http-nio-8080-exec-7] INFO  com.core.acceso1.data.model.User - Roles de: luis, Luis Sanchez: {ADMIN|USER}
+16-02-2024 16:49:47 [http-nio-8080-exec-9] INFO  c.c.a.c.FamilyProductControllerImpl - TRAZA FamilyProductUpdateGet: id= 3 > 
+FamilyProduct [id=3, description=DEPORTES, productList.size()=1,productList->names=Raqueta]
