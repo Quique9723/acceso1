@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.core.acceso1.data.model.Product;
@@ -25,6 +27,10 @@ public class ProductServiceImpl implements IProductService{
 	@Override
 	public List<Product> findListAll(){
 		return repository.findAll();
+	}	
+	@Override
+	public Page<Product> findListPage(Pageable pageable){
+		return repository.findAll(pageable);
 	}	
 	@Override
 	public List<Product> findListByFamilyProductId(Long idFamilyProduct) {
@@ -54,6 +60,12 @@ public class ProductServiceImpl implements IProductService{
 	public Product save(Product product){
 	return repository.save(product);
 		}
+
+	@Override
+	public Integer count() {
+		
+		return (int) repository.count();
+	}
 
 	
 	

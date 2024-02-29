@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"      
+	  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+	  
+<div th:fragment="keypadGenericPage1" class="border border-2 border-success mx-2 mt-2 mb-2">
+
+    <section sec:authorize="hasAnyAuthority('CUSTOMER')" 
+    		class="mt-1 mb-2 text-center" th:object="${formPage}">
+
+   		<!-- h5 class="text-white" th:text="${requestURI} + '/changePageSize/' + ${formPage.getPageSizeSelected()}"></h5 -->
+
+    	<div class="btn-toolbar justify-content-between" role="toolbar">
+    	 	
+			<h5 class="text-success mt-2 ms-2" th:text="#{html.keypadGenericPage.text.totalItems}+': <'+${formPage.getTotalItems()}+'> | '+#{html.keypadGenericPage.text.totalPages}+': <'+${formPage.getTotalPages()}+'>'"></h5>
+
+    		<div class="btn-group mt-1" role="group" aria-label="First group">
+				<!-- th:href="@{${formPage.dtoPage} + ${formPage.controllerPage} + '/' + ${item}}" -->
+    	 
+	 			<a th:if="${formPage.isActiveFirstPage}" th:href="@{'/changeFirstPage'}" class="btn btn-info me-1" th:text="#{html.keypadGenericPage.button.first}"></a>
+				<span th:unless="${formPage.isActiveFirstPage}" class="btn btn-warning me-1" th:text="#{html.keypadGenericPage.button.first}"></span>
+				
+				<a th:if="${formPage.isActivePrevPage}" th:href="@{${formPage.getRequestMappingClassString()} + '/changePrevPage'}" class="btn btn-info me-1" th:text="#{html.keypadGenericPage.button.previous}"></a>
+				<span th:unless="${formPage.isActivePrevPage}" class="btn btn-warning me-1" th:text="#{html.keypadGenericPage.button.previous}"></span>
+				
+				<span th:if="${formPage.getTotalPages() > 0}"
+			  		th:each="i: ${#numbers.sequence(formPage.partialPagePrev, formPage.partialPageNext)}" >
+				  		<a th:if="${formPage.getCurrentPage() != i}" th:href="@{${formPage.getRequestMappingClassString()} + '/changePage/' + ${i}}" class="btn btn-info me-1">[[${i}]]</a>
+			  			<span th:unless="${formPage.getCurrentPage() != i}" class="btn btn-warning me-1">[[${i}]]</span>
+				</span>
+				
+				<a th:if="${formPage.isActiveNextPage}" th:href="@{${formPage.getRequestMappingClassString()} + '/changeNextPage'}" class="btn btn-info me-1" th:text="#{html.keypadGenericPage.button.next}"></a>
+				<span th:unless="${formPage.isActiveNextPage}" class="btn btn-warning me-1" th:text="#{html.keypadGenericPage.button.next}"></span>
+				
+				<a th:if="${formPage.isActiveLastPage}" th:href="@{${formPage.getRequestMappingClassString()} + '/changeLastPage'}" class="btn btn-info me-1" th:text="#{html.keypadGenericPage.button.last}"></a>
+				<span th:unless="${formPage.isActiveLastPage}" class="btn btn-warning me-1" th:text="#{html.keypadGenericPage.button.last}"></span>
+			
+			</div>
+			
+			<div th:if="${formPage.getPageSizeList().size() > 0}" class="btn-group mt-1">
+				<span class="btn btn-info me-1 disabled" th:text="#{html.keypadGenericPage.text.itemsPerPage}"></span>
+		 		<a th:each="item : ${formPage.getPageSizeList()}" 
+					th:href="@{${formPage.getRequestMappingClassString()} + '/changePageSize/' + ${item}}"
+					
+					class="btn me-1 justify-content-right" role="button"
+					th:classappend="${formPage.getPageSizeSelected().equals(item)} 
+                    	? 'btn-info' : 'btn-outline-info'"
+					th:text="${item}">
+					<!-- th:href="${requestURI} + '/changePageSize/' + ${item}" -->
+				</a>
+			</div>    	
+
+    	</div>
+			
+    </section>
+    
+</div>
+
+</html>

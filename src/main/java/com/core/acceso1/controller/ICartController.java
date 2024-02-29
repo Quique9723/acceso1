@@ -4,6 +4,7 @@ import java.security.Principal;
 
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.core.acceso1.data.model.Login;
 
@@ -18,6 +19,17 @@ public interface ICartController {
 
 	String cartAddGet(Principal principal, Model model, HttpServletRequest request);
 
+	String cartAddChangePageSizeGet(@PathVariable Integer pageSize,Principal principal, Model model, HttpServletRequest request );
+
+	String changeFirstPageGet(Principal principal, Model model, HttpServletRequest request);
+
+	String changeLastPageGet(Principal principal, Model model, HttpServletRequest request);
+
+	String changePrevPageGet(Principal principal, Model model, HttpServletRequest request);
+
+	String changeNextPageGet(Principal principal, Model model, HttpServletRequest request);
+
+	String changePageGet(Integer numPage, Principal principal, Model model, HttpServletRequest request);
 	
 		
 			

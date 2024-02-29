@@ -5,31 +5,36 @@
 	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 	  layout:decorate="~{dialectLayouts/master}">
 
+<main layout:fragment="dialectLayoutCentral" role="main" class="pt-2 pb-2 bg-dark text-white">
 
-     <main layout:fragment="dialectLayoutCentral" role="main" class="pt-5 pb-5 bg-dark text-white">
-     
-     <div th:if="${flashMessage != null}" th:text="${flashMessage}"
-          class="alert alert-dimiddible fade show" role="alert"></div>
-          
-          <div th:if=" ${productList.isEmpty()}">
-          <h2 class="text-center text-warning mb-2" th:text="'No hay productos para comprar'"></h2>
-          
-          </div>
-           <div th:unless="${productList.isEmpty()}">
-          <h2 class="text-center text-warning mb-2" th:text="'No hay productos para comprar'"></h2>
-          
-          <!-- TODO incluir el fragmento de la barra de paginación  -->
+	<div th:if="${flashMessage != null}" th:text="${flashMessage}"
+		class="alert alert-dismissible fade show h3 text-warning text-center" role="alert">
+	</div>
+	
+	<div th:if="${formPage.getFormGenericPiece().getItemList()==null 
+			|| formPage.getFormGenericPiece().getItemList().isEmpty()}">
+		<h2 class="text-center text-warning mb-2" th:text="'No hay productos para comprar'"></h2>
+	</div>
 
-    <div class="row gx-xl-5 justify-content-center">
-      
-      
+	<div th:unless="${formPage.getFormGenericPiece().getItemList()==null 
+			|| formPage.getFormGenericPiece().getItemList().isEmpty()}">
+		<h2 class="text-center text-warning mb-2" th:text="'Vamos de compras!!!'"></h2>
 
-      <div th:each="product : ${productList}" class="col-lg-4 col-6 mb-4 mb-lg-0">
-        <!-- Product card -->
-        <div>
-          <!-- Product image -->
-          <div
-               class="
+		<!-- p th:text="${valuationTitleStringArray}"></p -->
+		<!-- p th:text="${valuationTitleStringArray.get(3)}"></p -->
+		
+		<div th:replace="~{dialectLayouts/keypadGenericPage :: keypadGenericPage1}" class="container">
+			<p>AQUI DEBE IR EL PAGINATOR</p>		
+		</div>
+		
+ 	    <div class="mx-2 row gx-xl-5 justify-content-center">
+
+ 	     <div th:each="product :  ${formPage.getFormGenericPiece().getItemList()}" class="col-lg-4 col-6 mb-4 mb-lg-0">
+  		     <!-- Product card -->
+       		 <div>
+          		<!-- Product image -->
+          		<div
+               		class="
                       bg-image
                       shadow-4-soft
                       rounded-6
@@ -38,50 +43,47 @@
                       d-block
                       "
                       data-mdb-ripple-init data-ripple-color="light"
-                        >
-                     <a th:href="@{/addToCart} + '/' + ${product.getId()}" > 
-            		<img
-                 	th:src="${product.getPictureUrl()}"
-                 	class="w-100"
-                 	alt=""
-                 />
-                 </a> 
-           
+               			>
+               			<a th:href="@{/addToCart} + '/' + ${product.getId()}" >
+            				<img
+	                 			th:src="${product.getPictureUrl()}"
+                 				class="w-100"
+                 				alt=""
+                 			/>
+                 		</a>
+
           <!-- Product content -->
           <div class="px-3 text-reset d-block">
-            <p class="fw-bold mb-2" th:text="${product.getName}">Pepper</p>
-            <p class="text-muted mb-2" th:text="${product.getFamilyProduct().getDescription}">Vegetables</p>
+            <p class="fw-bold mb-2" th:text="${product.getName()}">Pepper</p>
+            <p class="text-muted mb-2" th:text="${product.getFamilyProduct().getDescription()}">Vegetables</p>
             
-          
             <p>
-            <span th:text="${valuationTitleStringArray.get(__${product.getValuation()}__ - 1)}" class="text-warning"></span>
-            	<i th:each="i : ${#numbers.sequence(1,5)}"
-            	class="text-primary px-0 mx-0"
-            	th:classappend="${i<= product.getValuation()}
-            	? 'fas fa-star fa-sm'
-            	: 'far fa-star fa-sm'"
-            	>
+				<span th:text="${valuationTitleStringArray.get(__${product.getValuation()}__ - 1)}" class="text-warning"></span>
+            	<i th:each="i : ${#numbers.sequence(1, 5)}"
+            		class="text-primary px-0 mx-0"
+            		th:classappend="${i <= product.getValuation()}
+            			? 'fas fa-star fa-sm'
+            			: 'far fa-star fa-sm'">
             	</i>
-            	<span th:text="#{html.orderLineDialectAddToCart.valuationTitleStringList[__${product.getValuation()}__]}" class="text-info"></span>
+            	<span th:text="#{html.orderLineDialectAddToCart.valuationTitleStringList[__${product.getValuation()}__]}" class="text-info"></span>         	
             </p>
             
             <h5 class="mb-3">
-              <span th:if="${product.getDiscount()>0.0}"
-              th:text="${#numbers.formatDecimal(product.getPrice(),1, 'POINT',2, 'COMMA')} + '€'"
-              class="text-muted me-2 small align-middle text-decoration-line-through">
-              $49
+              <span th:if="${product.getDiscount() > 0.0}" 
+              	th:text="${#numbers.formatDecimal(product.getPrice(), 1, 'POINT', 2, 'COMMA')} + '€'"
+              	class="text-muted me-2 small align-middle text-decoration-line-through">
+              	$49
               </span>
-              
               <span 
-              th:text="${#numbers.formatDecimal(product.getFinalPrice(),1, 'POINT',2, 'COMMA')} + '€'"
-              class="align-middle">
-              $49
+              	th:text="${#numbers.formatDecimal(product.getFinalPrice(), 1, 'POINT', 2, 'COMMA')} + '€'"
+              	class="align-middle">
+              	$49 - discount
               </span>
             </h5>
 
             <a
                     type="button" role="button"
-                    class="btn btn-primary btn-rounded w-100" 
+                    class="btn btn-primary btn-rounded w-100"
                     th:href="@{/addToCart} + '/' + ${product.getId()}"
                     >
               <i class="fas fa-cart-plus me-2"></i>Add to cart
@@ -92,8 +94,13 @@
         <!-- Product card -->
       </div>
     </div>
-      </div>
+    </div>
+    	
+		<div th:replace="~{dialectLayouts/keypadGenericPage :: keypadGenericPage1}" class="container">
+			<p>AQUI DEBE IR EL PAGINATOR</p>		
+		</div>
+    
     </div>
   </main>
- 
+
 </html>
